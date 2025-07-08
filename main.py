@@ -64,6 +64,11 @@ class BLEPeripheral:
                 self.send(f"echoed: {response}")
             else:
                 self.send("🤖 未知のコマンド")
+                
+            if (decoded == "右"):
+                pass
+            elif (decoded == "左"):
+                pass
 
     def send(self, data):
         if self.conn_handle is not None:
